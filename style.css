@@ -24,6 +24,8 @@ header {
   height: 90vh;
   background-color: white;
   border-radius: 0 0 0 6rem;
+  opacity: 0.85;
+  transition: all 0.2s ease-in-out;
 }
 
 nav {
@@ -67,6 +69,7 @@ nav {
   height: 100%;
   padding: 0 2rem;
   padding-top: 12rem;
+  opacity: 1;
 }
 
 .main h1 {
@@ -98,4 +101,13 @@ nav {
 .socialmedia li {
   pointer: cursor;
   margin-right: 1rem;
+}
+
+/* add hover effect to all links */
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
 }
