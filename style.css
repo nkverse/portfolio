@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: white;
+  border-radius: 0 0 0 6rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  color: #6070FF;
+  flex: 1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  width: 2rem;
+  margin: auto;
+}
+
+.menu div {
+  background: #6070FF;
+  height: 0.2rem;
+  margin: 0.3rem;
+}
+
+.main {
+  background-image: url("./imgs/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  padding: 0 2rem;
+  padding-top: 12rem;
+}
+
+.main h1 {
+  width: 70%;
+}
+
+.main p {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  margin-top: -1rem;
+}
+
+.main .cta {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+  color: #6070FF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.socialmedia {
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.socialmedia li {
+  pointer: cursor;
+  margin-right: 1rem;
 }
