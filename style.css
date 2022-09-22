@@ -19,17 +19,22 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
   height: 90vh;
   background-color: white;
   border-radius: 0 0 0 6rem;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   transition: all 0.2s ease-in-out;
 }
 
 nav {
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -109,6 +114,99 @@ a {
   transition: all 0.5s;
 }
 
-a:hover {
-  opacity: 0.7;
+/* Works section*/
+.works {
+  margin: 8rem 0;
+  display: grid;
+  gap: 6rem;
+}
+
+.card {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+article h2 {
+  margin: 1rem 0 0;
+}
+
+.card article {
+  font-size: 1rem;
+}
+
+.card article h2 {
+  font-size: 2rem;
+}
+
+.prev-exp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.prev-exp span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #344563;
+}
+
+.prev-exp ul {
+  padding: 0.5rem 1.4rem;
+  margin: 0;
+  text-align: left;
+  flex-grow: 3;
+  display: flex;
+  color: #7a869a;
+}
+
+.prev-exp li {
+  /* margin: auto; */
+  margin: 0 1rem 0 0;
+}
+
+.used-tech {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.used-tech li {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+}
+
+article a {
+  display: inline-block;
+  color: #6070ff;
+  outline: 1px solid #6070ff;
+  text-decoration: none;
+  padding: 0.8rem;
+
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-weight: 700;
+}
+
+article a:hover {
+  background-color: #6070ff;
+  color: white;
 }
