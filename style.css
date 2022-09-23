@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
 *,
 *::before,
@@ -19,17 +19,26 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.main-header {
+a {
+  color: inherit;
+  transition: all 0.5s;
+}
+
+.main-header,
+.about {
   display: flex;
   flex-direction: column;
   height: 90vh;
   background-color: white;
-  border-radius: 0 0 0 6rem;
-  opacity: 0.85;
   transition: all 0.2s ease-in-out;
 }
 
+.main-header {
+  border-radius: 0 0 0 6rem;
+}
+
 nav {
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,6 +83,11 @@ section.main {
   opacity: 1;
 }
 
+.about-me h1 {
+  width: 50%;
+  font-size: 3rem;
+}
+
 section.main h1 {
   width: 70%;
 }
@@ -84,7 +98,8 @@ section.main p {
   margin-top: -1rem;
 }
 
-section.main .cta {
+.main .cta,
+.about-me .cta {
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.8;
@@ -104,11 +119,178 @@ section.main .cta {
   margin-right: 1rem;
 }
 
-/* add hover effect to all links */
-a {
-  transition: all 0.5s;
+/* Works section */
+.works {
+  margin: 8rem 0;
+  display: grid;
+  gap: 6rem;
 }
 
-a:hover {
-  opacity: 0.7;
+.card {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+article h2 {
+  margin: 1rem 0 0;
+}
+
+.card article {
+  font-size: 1rem;
+}
+
+.card article h2 {
+  font-size: 2rem;
+}
+
+.prev-exp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.prev-exp span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #344563;
+}
+
+.prev-exp ul {
+  padding: 0.5rem 1.4rem;
+  margin: 0;
+  text-align: left;
+  flex-grow: 3;
+  display: flex;
+  color: #7a869a;
+}
+
+.prev-exp li {
+  /* margin: auto; */
+  margin: 0 1rem 0 0;
+}
+
+.used-tech {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.used-tech li {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+}
+
+article a,
+.btn {
+  display: inline-block;
+  color: #396df2;
+  outline: 1px solid #6070ff;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  font-weight: 700;
+}
+
+article a:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+/* About section */
+.about {
+  width: 100%;
+  height: auto;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 6rem 0 0;
+}
+
+.about-me,
+.choices {
+  width: 90%;
+}
+
+.choices {
+  list-style-type: none;
+  padding: 0;
+}
+
+.choices h3 {
+  font-weight: 500;
+}
+
+.choices li h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open::after {
+  cursor: pointer;
+  content: ">";
+}
+
+.close::after {
+  cursor: pointer;
+  content: ">";
+  transform: rotate(90deg);
+}
+
+.choices li {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+  padding: 0;
+}
+
+.skills li {
+  background-color: #f7f7f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.skills li img {
+  margin-right: 1rem;
+}
+
+.choices li:first-child {
+  border: none;
+}
+
+.btn {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #6070ff;
+  color: white;
 }
