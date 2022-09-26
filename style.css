@@ -112,3 +112,9 @@ a {
 a:hover {
   opacity: 0.7;
 }
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
