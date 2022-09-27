@@ -218,12 +218,15 @@ article a:hover {
 .about {
   width: 100%;
   height: auto;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 2rem 2rem 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 6rem 0 0;
+}
+
+.about-me {
+  padding: 2rem;
 }
 
 .about-me,
