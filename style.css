@@ -237,6 +237,7 @@ article a:hover {
 .choices {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 6rem;
 }
 
 .choices h3 {
