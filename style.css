@@ -60,6 +60,10 @@ nav {
   font-weight: bold;
 }
 
+.menu-desktop {
+  display: none;
+}
+
 .navbar .menu {
   width: 2rem;
   margin: auto;
@@ -358,7 +362,25 @@ form button {
 }
 
 /* Desktop version */
-@media (min-width:764px) {
+@media (min-width: 764px) {
+  header nav {
+    padding: 1rem 10%;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+  }
+
+  .menu-desktop a {
+    text-decoration: none;
+  }
+
   .main-header {
     /* padding: 0 10%; */
   }
@@ -378,5 +400,53 @@ form button {
   .main > * {
     padding: 0 10%;
   }
-}
 
+  .card {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+
+  .card img {
+    flex: 3 1 80%;
+  }
+
+  .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about .about-me,
+  .about .choices {
+    width: 50%;
+  }
+
+  .about .about-me {
+    padding-left: 10%;
+  }
+
+  .about .choices {
+    padding-right: 10%;
+    margin-bottom: 0;
+  }
+
+  .skills {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .skills li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact {
+    padding: 5% 25%;
+    margin-top: 10%;
+  }
+
+  form button {
+    align-self: center;
+    max-width: 30%;
+    min-width: 30%;
+  }
+}
