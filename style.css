@@ -380,12 +380,12 @@ form button {
     transition: all 0.3s ease-in-out;
   }
 
-  .menu-desktop a:hover {
-    color: #6070ff;
-  }
-
   .menu-desktop a {
     text-decoration: none;
+  }
+
+  .menu-desktop a:hover {
+    color: #6070ff;
   }
 
   .main-header {
@@ -415,6 +415,11 @@ form button {
 
   .card img {
     flex: 3 1 80%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card img:hover {
+    transform: scale(1.2);
   }
 
   .about {
