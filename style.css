@@ -363,6 +363,10 @@ form button {
   max-width: 45%;
 }
 
+.none {
+  display: none;
+}
+
 /* Desktop version */
 @media (min-width: 764px) {
   header nav {
