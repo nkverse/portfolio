@@ -466,3 +466,9 @@ form button {
     min-width: 30%;
   }
 }
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
