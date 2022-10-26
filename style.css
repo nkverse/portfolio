@@ -75,6 +75,57 @@ nav {
   margin: 0.3rem;
 }
 
+.mobile-menu {
+  background-color: #6070ff;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  display: grid;
+  place-items: center;
+  opacity: 0.7;
+}
+
+.hide {
+  display: none;
+}
+
+/* body :not(.mobile-menu, .mobile-menu *) { */
+/*   filter: blur(0.2em); */
+/* } */
+
+.mobile-menu a {
+  text-decoration: none;
+}
+
+.mobile-menu .menu-close {
+  position: absolute;
+  right: 0.4em;
+  top: 0.4em;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.mobile-menu ul {
+  padding: 0;
+  font-size: 2em;
+  font-weight: 600;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.mobile-menu li {
+  padding: 0.4em 0;
+}
+
+.mobile-menu a:hover {
+  opacity: 0.8;
+}
+
+
 section.main {
   background-image: url("./imgs/header.png");
   background-repeat: no-repeat;
